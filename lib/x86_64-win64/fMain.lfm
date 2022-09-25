@@ -1,12 +1,13 @@
 object Form1: TForm1
-  Left = 2623
+  Left = 2566
   Height = 390
-  Top = 325
+  Top = 351
   Width = 628
-  Caption = 'Form1'
+  Caption = 'Nooote'
   ClientHeight = 370
   ClientWidth = 628
   Menu = MainMenu1
+  OnCreate = FormCreate
   LCLVersion = '2.2.2.0'
   object Memo1: TMemo
     Left = 0
@@ -24,30 +25,36 @@ object Form1: TForm1
       Caption = 'Файл'
       object MenuItem4: TMenuItem
         Caption = 'Открыть'
+        OnClick = MenuItem4Click
       end
       object MenuItem5: TMenuItem
         Caption = 'Сохранить'
+        OnClick = MenuItem5Click
       end
       object Separator1: TMenuItem
         Caption = '-'
       end
       object MenuItem6: TMenuItem
         Caption = 'Закрыть'
+        OnClick = MenuItem6Click
       end
     end
     object MenuItem2: TMenuItem
       Caption = 'Правка'
       object MenuItem7: TMenuItem
         Caption = 'Число XoR'
+        OnClick = MenuItem7Click
       end
       object MenuItem8: TMenuItem
         Caption = 'Зашифровать/Расшифровать'
+        OnClick = MenuItem8Click
       end
       object Separator2: TMenuItem
         Caption = '-'
       end
       object MenuItem9: TMenuItem
         Caption = 'Очистить'
+        OnClick = MenuItem9Click
       end
     end
     object MenuItem3: TMenuItem
@@ -55,17 +62,21 @@ object Form1: TForm1
       object MenuItem10: TMenuItem
         Caption = 'Перенос по словам'
         Checked = True
+        OnClick = MenuItem10Click
       end
       object MenuItem11: TMenuItem
         Caption = 'Шрифт'
+        OnClick = MenuItem11Click
       end
     end
   end
   object OpenDialog1: TOpenDialog
+    Filter = 'Блокнот|*.txt|Все файлы|*.*'
     Left = 85
     Top = 10
   end
   object SaveDialog1: TSaveDialog
+    Filter = 'Блокнот|*.txt|Все файлы|*.*'
     Left = 160
     Top = 10
   end
