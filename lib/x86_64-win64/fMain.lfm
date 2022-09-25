@@ -1,0 +1,78 @@
+object Form1: TForm1
+  Left = 2623
+  Height = 390
+  Top = 325
+  Width = 628
+  Caption = 'Form1'
+  ClientHeight = 370
+  ClientWidth = 628
+  Menu = MainMenu1
+  LCLVersion = '2.2.2.0'
+  object Memo1: TMemo
+    Left = 0
+    Height = 370
+    Top = 0
+    Width = 628
+    Align = alClient
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 15
+    Top = 10
+    object MenuItem1: TMenuItem
+      Caption = 'Файл'
+      object MenuItem4: TMenuItem
+        Caption = 'Открыть'
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Сохранить'
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Закрыть'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Правка'
+      object MenuItem7: TMenuItem
+        Caption = 'Число XoR'
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Зашифровать/Расшифровать'
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Очистить'
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Формат'
+      object MenuItem10: TMenuItem
+        Caption = 'Перенос по словам'
+        Checked = True
+      end
+      object MenuItem11: TMenuItem
+        Caption = 'Шрифт'
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 85
+    Top = 10
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 160
+    Top = 10
+  end
+  object FontDialog1: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 240
+    Top = 10
+  end
+end
